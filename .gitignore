@@ -1,0 +1,17 @@
+# Python/virtual env
+venv/
+__pycache__/
+*.pyc
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# env files
+.env
+
+# pylint, coverage, etc
+.coverage
+htmlcov/

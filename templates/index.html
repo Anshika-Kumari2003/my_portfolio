@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anshika Kumari | Portfolio</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <a href="#home" class="logo">Anshika Kumari</a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="{{ url_for('static', filename='resume/Anshika_Resume.pdf') }}" target="_blank">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+<section id="home" class="hero-premium">
+  <div class="hero-content">
+    <div class="hero-text">
+      <p class="intro">Hello !!!👋</p>
+      <h1>Hi, I’m <span>Anshika Kumari</span></h1>
+      <h2><i class="fa-solid fa-brain"></i> Aspiring Data Analyst & AI/ML Engineer</h2>
+
+      <p class="intro-line">
+        <i class="fa-solid fa-chart-line"></i> I’m <strong>Anshika Kumari</strong>, an aspiring Data Analyst & AI/ML Engineer passionate about turning data into decisions.  
+      </p>
+      <p class="intro-sub">
+        <i class="fa-solid fa-lightbulb"></i> Curious mind. <i class="fa-solid fa-square-root-variable"></i> Analytical thinker.  
+        <i class="fa-solid fa-graduation-cap"></i> Always learning.
+      </p>
+
+      <a href="{{ url_for('static', filename='resume/Anshika_Resume.pdf') }}" target="_blank" class="resume-btn">
+        
+        📄 View Resume
+      </a>
+    </div>
+
+    <div class="hero-image">
+        <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="Anshika Kumari" class="hero-profile">
+    </div>
+
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="section about-section">
+  <div class="container">
+    <h1>About Me</h1>
+
+    <div class="about-wrapper">
+      <!-- Left Side -->
+      <div class="about-image">
+        <img src="{{ url_for('static', filename='images/profile1.jpg') }}" alt="Anshika Kumari">
+      </div>
+
+      <!-- Right Side -->
+      <div class="about-content">
+        <p class="about-intro">
+          <span class="wave">👋</span> Hello! I’m <strong>Anshika Kumari</strong>, a 
+          <strong>final-year B.Tech (Data Science)</strong> student passionate about exploring data 
+          and building intelligent, data-driven solutions.  
+          <br><br>
+          I enjoy uncovering insights through <strong>analytics</strong> and <strong>machine learning</strong>, 
+          and aspire to grow as a <strong>Data Analyst</strong> or <strong>AI/ML Engineer</strong>.
+        </p>
+
+        <!-- Education Section -->
+        <div class="edu-section">
+          <h3><i class="fa-solid fa-user-graduate"></i> Education</h3>
+          <div class="edu-timeline">
+            <div class="edu-item">
+              <span class="edu-year">2022 – Present</span>
+              <h4>B.Tech in CSE (Data Science)</h4>
+              <p>Haldia Institute of Technology — CGPA 7.8/10</p>
+            </div>
+            <div class="edu-item">
+              <span class="edu-year">2021</span>
+              <h4>Intermediate</h4>
+              <p>Sanjay Gandhi Memorial College, Ranchi — JAC</p>
+            </div>
+            <div class="edu-item">
+              <span class="edu-year">2019</span>
+              <h4>Matriculation</h4>
+              <p>Saraswati Shishu Vidya Mandir, Ranchi — JAC</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interests Section -->
+        <div class="interest-section">
+          <h3><i class="fa-solid fa-lightbulb"></i> Interests</h3>
+          <ul class="interest-list">
+            <li><i class="fa-solid fa-chart-line"></i> Data Analytics & Visualization</li>
+            <li><i class="fa-solid fa-brain"></i> Machine Learning & AI</li>
+            <li><i class="fa-solid fa-basketball-ball"></i> Basketball</li>
+            <li><i class="fa-solid fa-chalkboard-teacher"></i> Teaching</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+ <!-- Skills Section -->
+<section id="skills" class="section section-alt">
+  <div class="container">
+    <h1>Skills</h1>
+
+    <div class="skills-timeline">
+      <div class="timeline-item">
+        <div class="skills-card">
+          <h3><i class="fas fa-code"></i> Programming Languages</h3>
+          <p>C, Python, MySQL, SQL</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="skills-card">
+          <h3><i class="fas fa-laptop-code"></i> IT Subjects</h3>
+          <p>DBMS, OOPs, Operating System</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="skills-card">
+          <h3><i class="fas fa-brain"></i> Technical Foundations</h3>
+          <p>Data Structures & Algorithms (DSA), Machine Learning</p>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="skills-card">
+          <h3><i class="fas fa-tools"></i> Libraries / Tools</h3>
+          <p>Git, GitHub, Visual Studio Code, Power BI, NumPy, Pandas, Excel</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h1>Projects</h1>
+      <div class="project-grid">
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/movie_project.jpg') }}" alt="Movie Recommendation System">
+          <h3>🎬 Movie Recommendation System</h3>
+          <p>A personalized movie recommender using collaborative filtering & NLP.</p>
+          <a href="https://movie-recommender-system-e576jkmrjvmb5ignayen5f.streamlit.app/" target="_blank" class="btn">View on GitHub</a>
+        </div>
+        <div class="project-card">
+          <img src="{{ url_for('static', filename='images/doc_llm_project.jpg') }}" alt="Document Analysis using LLM">
+          <h3>📄 Document Analysis using LLM</h3>
+          <p>Used Large Language Models to extract insights and summarize documents automatically.</p>
+          <a href="https://github.com/Anshika-Kumari2003/doc_analysis_using_llms" target="_blank" class="btn">View on GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <!-- Experience Section -->
+<section id="experience" class="section section-alt">
+  <div class="container">
+    <h1>Experience</h1>
+
+    <div class="experience-wrapper">
+
+      <!-- Sabudh Foundation -->
+      <div class="premium-exp">
+        <div class="exp-header">
+          <h3><i class="fa-solid fa-database"></i> Sabudh Foundation — Data Science Intern</h3>
+          <span class="exp-date">📅 Jan 2025 – Jun 2025</span>
+        </div>
+        <p>
+          Worked on data preprocessing, visualization, and model building using Python (<strong>Pandas</strong>, <strong>NumPy</strong>, <strong>Scikit-learn</strong>).
+          Analyzed datasets and implemented predictive models to derive actionable insights.
+          Strengthened problem-solving and teamwork skills through project collaboration.
+        </p>
+        <a href="https://drive.google.com/file/d/1GyhmsVgh7bGTl4x9wO2YU5JJWykdv7cp/view?usp=drivesdk" target="_blank" class="btn-exp">
+          🔗 View Certificate
+        </a>
+      </div>
+
+      <!-- Infosys Springboard -->
+      <div class="premium-exp">
+        <div class="exp-header">
+          <h3><i class="fa-solid fa-code"></i> Infosys Springboard — Python Intern</h3>
+          <span class="exp-date">📅 Feb 2025 – Mar 2025</span>
+        </div>
+        <p>
+          Completed hands-on training on Python programming fundamentals. 
+          Built mini-projects focusing on data structures, functions, and real-world logic building.
+          Strengthened programming logic and understanding of Python libraries.
+        </p>
+        <a href="https://drive.google.com/file/d/19LLCcuVhGCToc1kmsVvDHc1stEAIjrFZ/view?usp=drivesdk" target="_blank" class="btn-exp">
+          🔗 View Certificate
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h1>Contact Me</h1>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <div class="alert">{{ message }}</div>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+
+      <div class="contact-links">
+        <a href="mailto:kumarianshika2910@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+        <a href="https://www.linkedin.com/in/anshika-kumari-aa69112b0/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/Anshika-Kumari2003" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="tel:+916204102490"><i class="fa-solid fa-phone"></i></a>
+      </div>
+
+      <form action="/" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" rows="4" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>
+      <i class="fa-solid fa-heart" style="color:#00d4ff;"></i>
+      Designed with purpose. Developed with passion.
+    </p>
+    </div>
+  </footer>
+
+</body>
+</html>
