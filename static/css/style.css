@@ -228,13 +228,19 @@ header.navbar {
 }
 
 .profile-img {
-  width: 160px;
-  height: 160px;
+  width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 3px solid #00d4ff;
   object-fit: cover;
   margin-bottom: 1rem;
   box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+@media (max-width: 600px) {
+  .profile-img {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .hero h1 {
@@ -870,3 +876,113 @@ footer p {
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
   }
 }
+/* ==============================
+   📱 Mobile + Laptop Responsive Design
+   ============================== */
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 1.5rem;
+  }
+
+  .navbar {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .hero-content {
+    text-align: center;
+    padding: 2rem 1rem;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .hero-profile {
+    width: 120px;
+    height: 120px;
+  }
+
+  .about-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .premium-exp {
+    padding: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-links {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text h1 {
+    font-size: 1.6rem;
+  }
+
+  .hero-text h2 {
+    font-size: 1rem;
+  }
+
+  .btn, .resume-btn {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+}
+/* === Fix: Fully Responsive Hero Profile Image === */
+.hero-profile {
+  width: 380px;
+  height: 380px;
+  border-radius: 50%;
+  border: 6px solid #00d4ff;
+  object-fit: cover;
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.4);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+@media (max-width: 1024px) {
+  .hero-profile {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-profile {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-profile {
+    width: 130px;
+    height: 130px;
+  }
+}
+
